@@ -1,0 +1,41 @@
+<%-include('components/header'); %>
+<div class="container">
+    <h1>Hola registro</h1>
+
+    <div class="row mx-auto my-4">
+        <div class="col-lg-8 col-md-8 col-sm-8 mx-auto">
+                <form action="/signup" method="POST" class="mx-auto">
+<div class="form-group">
+        <input type="text" class="form-control" name="name" id="name"  placeholder="Name">
+</div>
+<div class="form-group">
+        <input type="text" class="form-control" name="lastname" id="lastname"  placeholder="Lastname">
+</div>
+<div class="form-group justify-content">
+        <input type="text" class="form-control" name="adress" id="adress"  placeholder="Adress">
+</div>
+<div class="form-group">
+        <input type="text" class="form-control" name="idNumber" id="idNumber"  placeholder="Number ID">
+</div>
+<div class="form-group">
+       <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+        <small id="emailHelp" class="form-text text-muted mx-auto">
+            <a href="/" class="rigth">8-12 letters & numbers</a>
+        </small>   
+</div>
+<input type="password" class="form-control" name="confPassword" id="confPassword" placeholder="Confirm password">
+<small id="emailHelp" class="form-text text-muted mx-auto">
+    <a href="/" class="text-rigth">Repeat your password please</a>
+</small>
+<div class="form-group mt-4 succes">
+        <button type="submit" class="btn-block btn btn-primary">Login</button>
+</div>
+</form>
+<div class="form-group">
+        <button type="submit" class="btn-block btn btn-secondary">Signup</button>
+</div>
+        </div>
+    </div>
+</div>
+
+<%-include('components/footer'); %>

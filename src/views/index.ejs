@@ -1,0 +1,26 @@
+<%-include('components/header'); %>
+<h1 class="display-2 text-center my-3">PET DRIVER</h1>
+<div class="row">
+    <div class="card col-md-4 col-sm-4 mx-auto mt-4 p-2  bg-primary">
+        <div class="card-body mx-auto">
+            <form action="/" method="POST">
+            <div class="form-group">
+                    <input type="text" class="form-control" name="username" id="name"  placeholder="Username">
+            </div>
+            <div class="form-group">
+                   <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                    <small id="emailHelp" class="form-text text-muted mx-auto">
+                        <a href="/" class="">Forgot your password?</a>
+                    </small>
+            </div>
+            <div class="form-group">
+                    <button type="submit" class="btn-block btn btn-primary">Login</button>
+            </div>
+            </form>
+            <div class="form-group">
+                    <a href="/signup"><button type="button" class="btn-block btn btn-secondary"> Signup</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+<%-include('components/footer'); %>
